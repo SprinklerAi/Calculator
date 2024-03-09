@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        number1 = findViewById(R.id.txtNumber1);
-        number2 = findViewById(R.id.txtNumber2);
-        result = findViewById(R.id.txtResult);
+        number1 = findViewById(R.id.editFirstNumber);
+        number2 = findViewById(R.id.editSecondNumber);
+        result = findViewById(R.id.textSeeResult);
 
     }
 
