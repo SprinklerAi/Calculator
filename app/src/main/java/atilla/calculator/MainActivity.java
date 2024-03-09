@@ -35,24 +35,40 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sum(View view) {
+        if (number1.getText().length() == 0 || number2.getText().length() == 0) {
+            result.setText("Täytä molemmat kentät.");
+            return;
+        }
         double n1 = parseDouble(number1.getText().toString());
         double n2 = parseDouble(number2.getText().toString());
 
         result.setText(String.valueOf(n1 + n2));
     }
     public void minus(View view) {
+        if (number1.getText().length() == 0 || number2.getText().length() == 0) {
+            result.setText("Täytä molemmat kentät.");
+            return;
+        }
         double n1 = parseDouble(number1.getText().toString());
         double n2 = parseDouble(number2.getText().toString());
 
         result.setText(String.valueOf(n1 - n2));
     }
     public void multiply(View view) {
+        if (number1.getText().length() == 0 || number2.getText().length() == 0) {
+            result.setText("Täytä molemmat kentät.");
+            return;
+        }
         double n1 = parseDouble(number1.getText().toString());
         double n2 = parseDouble(number2.getText().toString());
 
         result.setText(String.valueOf(n1 * n2));
     }
     public void divide(View view) {
+        if (number1.getText().length() == 0 || number2.getText().length() == 0) {
+            result.setText("Täytä molemmat kentät.");
+            return;
+        }
         double n1 = parseDouble(number1.getText().toString());
         double n2 = parseDouble(number2.getText().toString());
 
